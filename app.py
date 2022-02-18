@@ -13,10 +13,10 @@ exercises = ['Push-ups', 'Sit-ups', 'Jumping jacks', 'Squats', "Sumo squats"]
 
 
 if "selected_exercises" not in st.session_state:
-    st.session_state.selected_exercises = random.sample(exercises, 26)
+    st.session_state.selected_exercises = random.sample(exercises, 4)
 
 if "selected_cards" not in st.session_state:
-    st.session_state.selected_cards = random.sample(deck, 54)
+    st.session_state.selected_cards = random.sample(deck, 26)
 
 if st.button("Generate new exercises"):
     st.session_state.selected_exercises = random.sample(exercises, 4)
